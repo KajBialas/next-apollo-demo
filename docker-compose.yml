@@ -7,9 +7,16 @@ services:
       context: ./server/
     ports:
       - "4000:4000"
+    networks:
+      - next-apollo-app
   client:
     build:
       dockerfile: DockerFile
       context: ./client
     ports:
       - "3000:3000"
+    networks:
+      - next-apollo-app
+networks:
+  next-apollo-app:
+    driver: bridge

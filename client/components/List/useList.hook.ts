@@ -1,4 +1,4 @@
-import { useEffect, useState, Dispatch, SetStateAction } from "react";
+import { useEffect, useState } from "react";
 import { useLazyQuery } from "@apollo/client";
 import { GET_DETAILS } from "../../apollo/queries/getDetails";
 
@@ -8,6 +8,7 @@ interface useListHook {
       avatar: string;
       description: string;
       address: string;
+      id: string;
     }[],
     shouldFetchMore: boolean,
     fetchMoreData: () => void,
