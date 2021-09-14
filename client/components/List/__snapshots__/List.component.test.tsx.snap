@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component should match snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="ui input sc-gsTEea fNZppM"
+        data-testid="searchBar"
+      >
+        <input
+          name="searchBar"
+          placeholder="Search keyword"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="ui grid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="four wide computer sixteen wide mobile eight wide tablet column"
+          data-testid="cardContainer"
+        >
+          <div
+            class="ui card sc-bdfBQB foBiCW"
+          >
+            <div
+              class="image"
+            >
+              <img
+                src="avatar 1"
+              />
+            </div>
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                Name 1
+              </div>
+              <div
+                class="meta"
+              >
+                Friend
+              </div>
+              <div
+                class="description"
+              >
+                description 1
+              </div>
+            </div>
+            <div
+              class="extra content"
+            >
+              <div>
+                <i
+                  aria-hidden="true"
+                  class="address book icon"
+                />
+                address 1
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="four wide computer sixteen wide mobile eight wide tablet column"
+          data-testid="cardContainer"
+        >
+          <div
+            class="ui card sc-bdfBQB foBiCW"
+          >
+            <div
+              class="image"
+            >
+              <img
+                src="avatar 2"
+              />
+            </div>
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                Name 2
+              </div>
+              <div
+                class="meta"
+              >
+                Friend
+              </div>
+              <div
+                class="description"
+              >
+                description 3
+              </div>
+            </div>
+            <div
+              class="extra content"
+            >
+              <div>
+                <i
+                  aria-hidden="true"
+                  class="address book icon"
+                />
+                address 2
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="four wide computer sixteen wide mobile eight wide tablet column"
+          data-testid="cardContainer"
+        >
+          <div
+            class="ui card sc-bdfBQB foBiCW"
+          >
+            <div
+              class="image"
+            >
+              <img
+                src="avatar 3"
+              />
+            </div>
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                Name 3
+              </div>
+              <div
+                class="meta"
+              >
+                Friend
+              </div>
+              <div
+                class="description"
+              >
+                description 3
+              </div>
+            </div>
+            <div
+              class="extra content"
+            >
+              <div>
+                <i
+                  aria-hidden="true"
+                  class="address book icon"
+                />
+                address 3
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

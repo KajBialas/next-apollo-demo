@@ -22,9 +22,9 @@ const ListComponent = (): JSX.Element => {
 
       <Grid>
         <Grid.Row>
-          {loading && <Grid.Column mobile={16} tablet={16} computer={16}><Loader /></Grid.Column>}
+          {loading && <Grid.Column mobile={16} tablet={16} computer={16} data-testid="loader"><Loader /></Grid.Column>}
 
-          {!detailsArray.length && !loading && <Grid.Column mobile={16} tablet={16} computer={16}><Message><p>No data available</p></Message></Grid.Column>}
+          {!detailsArray.length && !loading && <Grid.Column mobile={16} tablet={16} computer={16} data-testid="noDataMessage"><Message><p>No data available</p></Message></Grid.Column>}
 
           {detailsArray?.map((detail, index: number) => (
               <Grid.Column mobile={16} tablet={8} computer={4} key={`${detail?.name}-${index}`} data-testid='cardContainer'>
