@@ -13,7 +13,7 @@ interface useListHook {
     fetchMoreData: () => void,
     loading: boolean,
     inputValue: string,
-    setInputValue: Dispatch<SetStateAction<string>>,
+    handleSetInputValue: (value: string) => void,
 }
 
 export const useList = (): useListHook => {
@@ -37,6 +37,10 @@ export const useList = (): useListHook => {
         })
     }, [inputValue])
 
+    const handleSetInputValue = (value: string) => {
+        setInputValue(value)
+    };
+
     const fetchMoreData = async () => {
         const { data: newData } = await fetchMore({
             variables: {
@@ -46,7 +50,7 @@ export const useList = (): useListHook => {
             },
         })
         newData?.details.length < 20 ? setShouldFetchMore(false) : setShouldFetchMore(true);
-        setDetailsArray([...detailsArray, ...newData.details])
+        setDetailsArray(prevState => [...prevState, ...newData.details])
     }
 
     return {
@@ -55,6 +59,6 @@ export const useList = (): useListHook => {
         fetchMoreData,
         loading,
         inputValue,
-        setInputValue,
+        handleSetInputValue,
     }
 }

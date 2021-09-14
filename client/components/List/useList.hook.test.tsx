@@ -54,8 +54,25 @@ describe('useList hook', () => {
             fetchMoreData: () => {},
             loading: false,
             inputValue: '',
+            handleSetInputValue: () => {},
         }
 
-        expect(result.current).toEqual(expectedResult);
+        expect(JSON.stringify(result.current)).toEqual(JSON.stringify(expectedResult));
+    });
+
+    it('should return correctly value after input change', () => {
+        const { result } = renderHook(() => useList());
+
+        result.current.handleSetInputValue('test');
+        const expectedResult = {
+            detailsArray: exampleDetailsMock,
+            shouldFetchMore: false,
+            fetchMoreData: () => {},
+            loading: false,
+            inputValue: 'test',
+            handleSetInputValue: () => {},
+        }
+
+        expect(JSON.stringify(result.current)).toEqual(JSON.stringify(expectedResult));
     });
 })

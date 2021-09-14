@@ -8,16 +8,16 @@ import { useList } from "./useList.hook";
 const ListComponent = (): JSX.Element => {
   const {
         detailsArray,
-            shouldFetchMore,
-            fetchMoreData,
-            loading,
-            inputValue,
-            setInputValue,
+        shouldFetchMore,
+        fetchMoreData,
+        loading,
+        inputValue,
+        handleSetInputValue,
     } = useList();
 
   return (
     <div>
-      <SearchBarComponent onChange={setInputValue} currentValue={inputValue} />
+      <SearchBarComponent onChange={handleSetInputValue} currentValue={inputValue} />
       {inputValue !== '' && <Message><p>{LANG.EN.searchFilterLabel} {inputValue}</p></Message>}
 
       <Grid>
