@@ -51,7 +51,8 @@
         }
       ],
       "@babel/preset-react",
-      "@babel/preset-typescript"
+      "@babel/preset-typescript",
+      ["styled-components", { "ssr": true, "displayName": true }]
     ]
   },
   "jest": {

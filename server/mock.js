@@ -6,5 +6,6 @@ module.exports = {
     address: faker.address.streetAddress(),
     avatar: faker.image.avatar(),
     description: faker.lorem.paragraph(),
+    id: faker.datatype.uuid(),
   })),
 };

@@ -6,6 +6,7 @@ const typeDefs = gql`
     address: String!
     avatar: String!
     description: String!
+    id: String!
   }
   type Query {
     name: String!

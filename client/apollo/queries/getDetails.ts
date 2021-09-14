@@ -7,6 +7,7 @@ export const GET_DETAILS = gql`
       address
       avatar
       description
+      id
     }
   }
 `;
