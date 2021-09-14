@@ -1,7 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useList } from './useList.hook';
 import { useLazyQuery } from "@apollo/client";
-import {Dispatch, SetStateAction} from "react";
 
 jest.mock('@apollo/client');
 
